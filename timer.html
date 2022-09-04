@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/512abd059f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Fundoro</title>
+</head>
+<body id="root">
+     <main>
+        <div id="main">
+            <img id="bg" class="bg" src="./inactivebg.gif"/>
+            <h1>FunDoro</h1>
+            <section id="set-time">
+                <div id="break">
+                    <h2 id='break-label'>Break Length</h2>
+                    <i class="fas fa-plus" id="break-increment"></i>
+                    <h2 id="break-length"></h2>
+                    <i class="fas fa-minus" id="break-decrement"></i>
+                </div>
+                <div id="session">
+                    <h2 id='session-label'>Session Length</h2>
+                    <i class="fas fa-plus" id="session-increment"></i>
+                    <h2 id="session-length"></h2>
+                    <i class="fas fa-minus" id="session-decrement"></i>
+                </div>
+            </section>
+            <section id="display">
+                <h2 id="timer-label">Timer</h2>
+                <h2 id="time-left"></h2>
+            </section>
+            <section id="controls">
+                <i class="fas fa-play" id="start_stop"></i>
+                <i class="fas fa-sync" id="reset"></i>
+            </section>
+            <audio src="./beep.wav" id="beep"></audio>
+        </div>
+     </main>
+     <script src="timer.js"></script>
+     <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+</body>
+</html>
